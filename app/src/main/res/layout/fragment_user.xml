@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.UserFragment"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/brown">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/view_drink_list"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="4">
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextViewStyle"
+                    android:background="@drawable/background_text_view"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/totalSum"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/view_coinList"
+                    android:layout_margin="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="20dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextViewStyle"
+                        android:layout_width="300dp"
+                        android:text="1. Внесите деньги"
+                        android:textSize="20dp" />
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextViewStyle"
+                        android:layout_width="300dp"
+                        android:text="2. Выберите напиток"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextViewStyle"
+                        android:text="3. Получите сдачу"
+                        android:textSize="20dp"
+                        android:layout_width="300dp"/>
+
+                </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            style="@style/ButtonStyle"
+            android:id="@+id/cash_back"
+            android:text="Сдача"
+            app:cornerRadius="15dp"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

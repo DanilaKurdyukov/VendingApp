@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EditCoinFragment"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:gravity="center">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="30dp"
+        android:id="@+id/text_view_coin_name_admin"
+        />
+    <EditText
+        style="@style/EditTextStyle"
+        android:layout_height="30dp"
+        android:layout_width="60dp"
+        android:gravity="center"
+        android:text="10"
+        android:textSize="20dp"
+        android:id="@+id/edit_text_coin_count_admin"
+        />
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:checked="true"
+        android:buttonTint="@color/black"
+        android:id="@+id/checkbox_coin_is_active_admin"
+        android:buttonTintMode="multiply"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/ButtonStyle"
+        android:id="@+id/save_coin"
+        android:text="Сохранить"/>
+
+</LinearLayout>

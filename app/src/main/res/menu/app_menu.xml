@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Отчет" android:id="@+id/item_report" android:icon="@drawable/ic_report_pdf" app:showAsAction="always"/>
+    <item android:title="Изменить" android:id="@+id/item_edit" android:icon="@drawable/ic_edit" app:showAsAction="always"/>
+    <item android:title="Удалить" android:id="@+id/item_delete" android:icon="@drawable/ic_delete" app:showAsAction="always"/>
+</menu>

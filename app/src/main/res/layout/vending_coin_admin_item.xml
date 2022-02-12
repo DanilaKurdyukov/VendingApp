@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/background_coin_item"
+    android:gravity="center_horizontal">
+    <TextView
+        style="@style/TextViewStyle"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="30dp"
+        android:id="@+id/coin_name_admin"
+        />
+    <EditText
+        style="@style/EditTextStyle"
+        android:layout_height="30dp"
+        android:layout_width="60dp"
+        android:gravity="center"
+        android:text="10"
+        android:textSize="20dp"
+        android:id="@+id/coin_count_admin"
+        />
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:checked="true"
+        android:buttonTint="@color/black"
+        android:id="@+id/coin_is_active_admin"
+        android:buttonTintMode="multiply"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

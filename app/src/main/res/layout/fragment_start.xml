@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.StartFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+   <com.google.android.material.button.MaterialButton
+       style="@style/ButtonStyle"
+       android:id="@+id/button_user_interface"
+       android:text="Пользовательский интерфейс"/>
+    <com.google.android.material.button.MaterialButton
+        style="@style/ButtonStyle"
+        android:id="@+id/button_admin_interface"
+        android:text="Административный интерфейс"/>
+</LinearLayout>

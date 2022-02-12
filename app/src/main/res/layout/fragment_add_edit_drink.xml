@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddEditDrinkFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/edit_text_drink_name"
+        android:hint="Название"/>
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/edit_text_drink_cost"
+        android:hint="Цена"/>
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/edit_text_drink_count"
+        android:hint="Количество"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/image_view_drink_image"
+        android:src="@drawable/ic_add_photo"
+        android:layout_margin="10dp"/>
+    <com.google.android.material.button.MaterialButton
+        style="@style/ButtonStyle"
+        android:id="@+id/save"
+        android:text="Сохранить"/>
+</LinearLayout>

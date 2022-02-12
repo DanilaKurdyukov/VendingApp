@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/background_coin_item">
+<TextView
+    style="@style/TextViewStyle"
+    android:layout_height="100dp"
+    android:layout_width="100dp"
+    android:gravity="center"
+    android:text="1"
+    android:textSize="30dp"
+    android:id="@+id/coin_name"
+    />
+</LinearLayout>
